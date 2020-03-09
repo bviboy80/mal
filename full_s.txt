@@ -1,0 +1,32 @@
+Mail.dat Processing
+Version 1.1 (September 12, 2016)
+Create Mail.dat Job
+In the presort summary menu, click on Tools and then Mail.dat (CTRL + D).  This will open the wizard which will look like Figure 1 below.
+ 
+Figure 1: Mail.dat Wizard
+If you have saved settings for a job, click the box “Load saved Mail.dat settings” and then on the three dots to select the saved job settings.  If not, click on Next to continue.
+Next you will be prompted to select the type of Mail.dat job being created.  Most times we will be using the Original Mail.dat job.  If you would like to delete a previously created job, select the Delete Mail.dat job.  Note that it is recommended to delete and create a new job rather than modify or update an existing one.  Click Next when done.
+The next screen will set up the Mail.dat job parameters.  Fields with asterisks (*) are required.  More detailed information can be found on pg. 664 of the Mail Manager manual.  The File Set ID field will be what the job shows up as in the dashboard.  It is recommended that this be a combination of the job and lot.  For example, “32544 – Keane – 2PG”.  The Job ID is a field used to uniquely identify the presort.  This field is only 8 alphanumeric characters.  This number is auto-generated and can be left blank for Mail Manager to create.  Note the output folder specified in the Location field.  This is where the files will be output.  Click Next when finished.
+ 
+Figure 2: Mail.dat Job Info
+On the next screen make sure that the Zip Mail.dat database option is checked and check the “Delete Mail.dat database after zipping.”  If piece level detail is required, check the “Piece Detail Table” option.  Click on Next to continue.
+On pg. 5 of the wizard, enter information about the mailer.  Make sure that the ZIP+4 and CRID information is correct.  The Verification Facility refers to AST.  Also make sure that the Full Service Participation is set to Full Service.  See Figure 3 for an example.  
+The Move Update Method field should automatically be filled in with NCOALink and the date when NCOA was done.
+ 
+Figure 3: Mailer Info
+The info on pg. 6 does not need to be edited with the exception of clicking on “Generate Container Information”.  This will enable the screen that will allow us to enter a mail date.  After checking that the option has been enabled, we can click through to pg. 7.
+Mail piece information is entered on pg. 7 of the wizard.  We need to enter a short code for the mail piece that will make it easy to identify in the future.  A more detailed description can be entered in the Description field.  See Figure 4 for an example.
+ 
+Figure 4: Piece Information
+The Principal Component describes in detail the main part of the mailing.  Most of the information is automatically pulled from the presort settings.  The description field here will typically be “Letter” or “Postcard”.  Click Next when done to proceed.
+The next screen allows you to enter information about the tags.  If this is not the next screen, then either the General Container information or Containers window will appear.  This info is optional.  
+If using this option, make sure the “Include Container Tag Information” box is checked.  The Mailer/Mailer Location field should be “American Stock Transfer”.  Check if the Mailer ID is correct.  Press Next to proceed.
+ 
+Figure 5: Postage Info
+The postage screen allows you to select the method for paying for this job.  For “Postage Payment Option” select “Debit”.  Depending on the mailing, the “Postage Payment Method” may change.  Typically this will be set to “Permit”.  
+The area surrounded in green should match the CRID number of the client.  Additionally, we need to put a value for the customer reference ID.  This data is placed in the field circled in red.  See Figure 5 for an example of a completed screen.  Click on Next when finished.
+The package level options screen will appear next.  We don’t need to configure anything here and can click through to the next screen.
+The final screen will allow us to configure the Intelligent Mail barcode.  Make sure Full Service is checked as well as any other services required.  Check the Mailer ID info is correct and the Serial Number expression, if using one, is valid.  Click Finish to generate the Mail.dat file set.
+One the file set has been created, the Presort Summary window will show that an original Mail.dat job has been created.  See Figure 6 for an example.  If this file set is deemed to be bad, go back to the Mail.dat window, delete it and create a new one.  It is NOT advisable to update a current Mail.dat job.
+ 
+Figure 6: Presort window after Mail.dat file creation
